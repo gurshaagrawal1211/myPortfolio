@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/dd069500b7.js"></script>
+</head>
+<body>
+    <div id="hero">
+            <nav>
+                <img src="./images/logo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                </ul>
+            </nav>
+            <div class="detel">
+                <h1>I,m Gursha <span>Agrawal</span></h1>
+                <p>This is my official portfolio website to show all my details</p>
+                <a href="#">Download CV</a>
+            </div>
+            <div class="images">
+                <img src="./images/My project (1).png" alt="" class="shape">
+                <img src="./images/pic.png" alt="" class="pic">
+            </div>
+    </div>
+
+    <!-- About-------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/pic.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quasi nesciunt inventore incidunt accusamus quae accusantium provident, at distinctio fuga molestias voluptatem corporis, dignissimos sed reiciendis error libero. Praesentium, repellat aspernatur delectus dicta sapiente cupiditate quibusdam, error ipsum, iusto fugiat cum eos facere maxime quis hic necessitatibus laudantium qui tempore!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend Development</span><br>HTML<br>CSS<br>JavaScript</li>
+                                <li><span>Data Structure and Algorithms</span><br>C++<br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - Current</span><br><p style="font-weight: bold; color:bisque;">Bachelor of Technology</p>Computer Science and Engineering<br>GLA University,Mathura</li>
+                                <li><span>2018 - 2020</span><br><p style="font-weight: bold; color:bisque;">Intermediate</p>HPD, Vrindavan</li>
+                                <li><span>2016 - 2018</span><br><p style="font-weight: bold; color:bisque;">High School</p>HPD, Vrindavan</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio----------------------------------- -->
+
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="img" src="./images/amit-pritam-nehCKum2Yt0-unsplash.jpg" alt="">
+                    <!-- <div class="layer">
+                        <h3>App Name1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti. Nostrum dolore delectus natus reiciendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+                </div>
+                <div class="work">
+                    <img class="img" src="./images/eugene-golovesov-bbprexjNpxQ-unsplash.jpg" alt="">
+                    <!-- <div class="layer">
+                        <h3>App Name2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
+                            Nostrum dolore delectus natus reiciendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+                </div>
+                <div class="work">
+                    <img class="img" src="./images/eugene-golovesov-bbprexjNpxQ-unsplash.jpg" alt="">
+                    <!-- <div class="layer">
+                        <h3>App Name3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
+                            Nostrum dolore delectus natus reiciendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact----------------------------------------- -->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./files/GurshaAgrawal_CSE_GLAU1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy Gursha </p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
