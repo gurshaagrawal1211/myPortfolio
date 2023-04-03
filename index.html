@@ -12,15 +12,15 @@
     <div id="hero">
             <nav>
                 <img src="./images/logo.png" class="logo" alt="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
-                    <i class=" fas fa-solid fa-xmark"></i>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-solid fa-bars"></i>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="detel">
                 <h1>I'm Gursha <span>Agrawal</span></h1>
@@ -36,14 +36,13 @@
     <!-- About-------------------------------- -->
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="row">
+            <class="row">
                     <div class="about-col-1">
                         <img src="./images/pic.png" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quasi nesciunt inventore incidunt accusamus quae accusantium provident, at distinctio fuga molestias voluptatem corporis, dignissimos sed reiciendis error libero. Praesentium, repellat aspernatur delectus dicta sapiente cupiditate quibusdam, error ipsum, iusto fugiat cum eos facere maxime quis hic necessitatibus laudantium qui tempore!</p>
+                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quasi nesciunt inventore incidunt accusamus quae accusantium provident, at distinctio fuga molestias voluptatem corporis, dignissimos sed reiciendis error libero. Praesentium, repellat aspernatur delectus dicta sapiente cupiditate quibusdam, error ipsum, iusto fugiat cum eos facere maxime quis hic necessitatibus laudantium qui tempore!</p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -64,7 +63,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>

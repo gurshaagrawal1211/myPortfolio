@@ -173,7 +173,7 @@ span
 .tab-links
 {
     margin-right: 7rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -388,22 +388,21 @@ form .btn2
 
 @media(max-width:600px)
 {
+    html {
+            font-size: 35%;
+        }
     .images
     {
         width: 25%;
         height: 60%;
-        bottom: 10rem;
-        right: 40rem;
+        left: 25rem;
     }
-   html{
-        font-size: 35%;
-   }
    .detel {
        margin-left: 14%;
    }
 
    .detel h1 {
-       font-size: 8rem;
+       font-size: 6rem;
    }
 
    .detel p {
@@ -419,19 +418,89 @@ form .btn2
     display: block;
     font-size: 2rem;
    }
-   /* nav ul{
+   nav ul{
     background: #262626;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -30rem;
     width: 30rem;
     height: 100vh;
     padding-top: 8rem;
     font-size: 3rem;
+    z-index: 2;
+    transition: right 0.5s;
    }
    nav ul li
    {
     display: block;
-    margin: 2.5rem;
-   } */
+    margin: 5rem;
+   }
+   nav ul .fas
+   {
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+   }
+   #about
+   {
+    height: 100%;
+   }
+   .sub-title {
+        margin-top: 2rem;
+   }
+   .tab-links {
+       margin-right: 10rem;
+       font-size: 3rem;
+   }
+
+   .tab-contents ul li span {
+       font-size: 3rem;
+   }
+
+   .tab-contents.active-tab {
+       font-size: 2rem;
+   }
+   .info
+   {
+    font-size: 2rem;
+   }
+   .work-list {
+       display: inline-block;
+       
+   }
+   .work img {
+       margin: 4rem 0;
+   }
+   .contact
+   {
+    height: 100vh;
+    padding-top: 2rem;
+   }
+   .contact-left,.contact-right
+   {
+    flex-basis: 100%;
+   }
+   .contact-left p {
+       font-size: 2rem;
+   }
+   .btn.btn2 {
+       font-size: 2rem;
+   }
+
+   .contact-right form {
+       width: 100%;
+   }
+   form .btn2 {
+       margin-top: 2rem;
+   }
+   .copyright {
+        margin-top: 16rem;
+        margin-left: 1.2rem;
+        font-size: 2rem;
+
+   }
+
+   .fas {
+       display: none;
+   }
 }
