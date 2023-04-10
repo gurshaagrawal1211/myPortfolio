@@ -24,3 +24,8 @@ function closemenu()
 {
     sidemenu.style.right="-30rem";
 }
+const title =document.querySelector('info');
+function open()
+{
+    
+}

@@ -8,11 +8,13 @@
 html
 {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body
 {
     background-color: #080808;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #hero
@@ -30,7 +32,7 @@ body
 }
 .logo
 {
-    width: 12rem;
+    width: 8rem;
 }
 
 nav
@@ -116,18 +118,9 @@ span
     transform:translateX(-50%);
     transition: bottom 1s, left 1s;
 }
-
-/* .images:hover .shape
-{
-    bottom: 30rem;
+.fas {
+    display: none;
 }
-
-.images:hover .pic
-{
-    left: 55%;
-} */
-
-
 
 /* About------------------------------ */
 
@@ -143,13 +136,14 @@ span
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1
+ .about-col-1
 {
     flex-basis: 35% ;
 }
+
 .about-col-1 img
 {
-    width: 100%;
+    width:100%;
     border-radius: 1.5rem;
     border: .2rem solid ;
 }
@@ -163,7 +157,7 @@ span
     font-size: 6rem;
     font-weight: 600;
     color: #fff;
-}
+} 
 
 .tab-titles
 {
@@ -196,7 +190,7 @@ span
 .tab-contents ul li
 {
     list-style: none;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .tab-contents ul li span
 {
@@ -211,19 +205,20 @@ span
 {
     display: block;
 }
+.info
+{
+    color: #ababab;
+    font-size: 1.5rem;
+}
 
+/* project---------------------------------------------- */
 
-/* portfolio---------------------------------------------- */
-
-#portfolio
+#project
 {
     padding: 5rem 0;
     
 }
 
-/* .img{
-    width: 300rem;
-} */
 .work-list
 {
     display: grid;
@@ -234,7 +229,7 @@ span
 .work{
     border-radius: 1rem;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .work img
 {
@@ -243,15 +238,7 @@ span
     display: block;
     transition: transform 0.5s;
 }
-/* .layer
-{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #ff004f);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
+
 .layer
 {
     width: 100%;
@@ -267,7 +254,7 @@ span
     padding: 0 4rem;
     text-align: center;
     font-size: 1.4rem;
-    /* transition: height 0.5s; */
+    transition: height 0.8s;
 }
 .layer h3
 {
@@ -287,19 +274,33 @@ span
     border-radius: 50%;
     text-align: center;
 }
-/* .work:hover img
+.work:hover img
 {
     transform: scale(1.1);
-} */
+}
 .work:hover .layer
 {
     height: 100%;
+    transform: scale(1.1);
+}
+.work:hover h3{
+    opacity: 1;
+}
+.work:hover p {
+    opacity: 1;
+}
+.work:hover a {
+    opacity: 1;
+}
+.hide
+{
+    opacity: 0;
 }
 
 /* contact-------------------------------------------- */
 .contact
 {
-    padding-top: 10rem;
+    padding-top: 6rem;
 }
 .contact-left
 {
@@ -386,7 +387,7 @@ form .btn2
 }
 /* css for small screens------------------------------------ */
 
-@media(max-width:600px)
+@media(max-width:576px)
 {
     html {
             font-size: 35%;
@@ -395,7 +396,7 @@ form .btn2
     {
         width: 25%;
         height: 60%;
-        left: 25rem;
+        left: 30rem;
     }
    .detel {
        margin-left: 14%;
@@ -440,6 +441,7 @@ form .btn2
         position: absolute;
         top: 4rem;
         left: 3rem;
+        cursor: pointer;
    }
    #about
    {
@@ -499,8 +501,95 @@ form .btn2
         font-size: 2rem;
 
    }
+}
+@media (min-width:577px) and (max-width:768px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+    .images
+    {
+        height: 67%;
+        right: 24rem;
+    }
+    .detel p 
+    {
+        font-size: 2rem;
+    }
+   .detel a 
+    {
+        padding: 2rem 2.8rem;
+        font-size: 2rem;
+    }
+    #about 
+    {
+        height: 100vh;
+    }
+    .row
+    {
+        display: grid;
+    }
+    .about-col-1 img
+    {
+        width:30rem;
+        height: 30rem;
+    }
+    .sub-title
+    {
+        font-size: 5rem;
+        margin-top: 2rem;
+    } 
 
-   .fas {
-       display: none;
-   }
+.tab-titles
+{
+    margin: 4rem 0 3rem;
+}
+.tab-links
+{
+    margin-right: 10rem;
+    font-size: 3rem;
+}
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.tab-contents ul li span
+{
+    color: #b54769;
+    font-size: 3rem;
+}
+.info
+{
+    color: #ababab;
+    font-size: 2rem;
+}
+.work-list {
+    display: inline-block;
+}
+.work img {
+    margin: 4rem 0;
+}
+.work img
+{
+    height: 80rem;
+}
+.sub-title
+{
+    font-size: 4rem;
+}
+
+.contact-left p {
+    font-size: 2rem;
+}
+
+.btn.btn2 {
+    font-size: 2rem;
+}
+
+.copyright {
+    font-size: 2rem;
+}
 }

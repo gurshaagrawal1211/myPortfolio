@@ -11,20 +11,19 @@
 <body>
     <div id="hero">
             <nav>
-                <img src="./images/logo.png" class="logo" alt="logo">
+                <img src="./images/Screenshot (25).png" class="logo" alt="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="detel">
                 <h1>I'm Gursha <span>Agrawal</span></h1>
-                <p>This is my official portfolio website to show all my details</p>
+                <p>This is my official project website to show all my details</p>
                 <a href="#">Download CV</a>
             </div>
             <div class="images">
@@ -36,7 +35,7 @@
     <!-- About-------------------------------- -->
     <div id="about">
         <div class="container">
-            <class="row">
+            <div class="row">
                     <div class="about-col-1">
                         <img src="./images/pic.png" alt="">
                     </div>
@@ -45,7 +44,7 @@
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quasi nesciunt inventore incidunt accusamus quae accusantium provident, at distinctio fuga molestias voluptatem corporis, dignissimos sed reiciendis error libero. Praesentium, repellat aspernatur delectus dicta sapiente cupiditate quibusdam, error ipsum, iusto fugiat cum eos facere maxime quis hic necessitatibus laudantium qui tempore!</p>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Contact</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
@@ -67,37 +66,37 @@
         </div>
     </div>
 
-    <!-- portfolio----------------------------------- -->
+    <!-- project----------------------------------- -->
 
-    <div class="portfolio">
+    <div id="project">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img class="img" src="./images/amit-pritam-nehCKum2Yt0-unsplash.jpg" alt="">
-                    <!-- <div class="layer">
-                        <h3>App Name1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti. Nostrum dolore delectus natus reiciendis?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div> -->
+                    <div class="layer">
+                        <h3 class="hide">App Name1</h3>
+                        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti. Nostrum dolore delectus natus reiciendis?</p>
+                        <a href="#" class="hide"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
                     <img class="img" src="./images/eugene-golovesov-bbprexjNpxQ-unsplash.jpg" alt="">
-                    <!-- <div class="layer">
-                        <h3>App Name2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
+                    <div class="layer">
+                        <h3 class="hide">App Name2</h3>
+                        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
                             Nostrum dolore delectus natus reiciendis?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div> -->
+                        <a href="#" class="hide"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
                     <img class="img" src="./images/eugene-golovesov-bbprexjNpxQ-unsplash.jpg" alt="">
-                    <!-- <div class="layer">
-                        <h3>App Name3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
+                    <div class="layer">
+                        <h3 class="hide">App Name3</h3>
+                        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sunt enim magni laboriosam alias corrupti.
                             Nostrum dolore delectus natus reiciendis?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div> -->
+                        <a href="#" class="hide"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +104,7 @@
 
     <!-- contact----------------------------------------- -->
 
-    <div class="contact">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
