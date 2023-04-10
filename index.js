@@ -24,8 +24,27 @@ function closemenu()
 {
     sidemenu.style.right="-30rem";
 }
-const title =document.querySelector('info');
-function open()
-{
-    
-}
+
+
+
+// Contact form------------------------------------------------------------
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycby3HkEA5Ii6f7moUz7_MTFFEGzKNiSEmXMB7zNIOvsjrOZq6Q4cq8VZcvKgBzYgki3P/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Message Sent Successfully")
+        //msg.innerHTML="Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
